@@ -1,0 +1,22 @@
+data:
+  root: "p:/projectAG_New/PigRGB_Weight/RGB_9579"
+  img_size: 224
+  num_folds: 5
+  num_workers: 4
+
+model:
+  backbone: "efficientnet_b3"
+  pretrained: true
+  dropout: 0.3
+
+training:
+  epochs: 50
+  batch_size: 32
+  lr: 1.0e-4
+  weight_decay: 1.0e-5
+  patience: 10          # early stopping rounds
+  loss: "huber"         # options: "huber", "mae", "mse"
+  scheduler: "cosine"   # options: "cosine", "step", "none"
+
+output:
+  dir: "p:/projectAG_New/outputs"

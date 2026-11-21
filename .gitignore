@@ -1,0 +1,66 @@
+# ==========================================
+# Byte-compiled / optimized / DLL files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ==========================================
+# Environments & Sensitive Credentials
+# ==========================================
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+ENV/
+
+# ==========================================
+# Large Datasets & Archives
+# ==========================================
+PigRGB_Weight/
+waste/
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ==========================================
+# Model Weights & Large Checkpoints (> 100MB)
+# (Upload checkpoints to HuggingFace / Google Drive)
+# ==========================================
+outputs/checkpoints/*
+!outputs/checkpoints/.gitkeep
+*.pth
+
+# ==========================================
+# Temporary Execution Artifacts & Logs
+# ==========================================
+runs/
+static_images/raw/*
+static_images/processed/*
+outputs/predictions/*
+*.log
+outputs/logs/*.log
+
+# Keep directory structure with .gitkeep if needed
+!static_images/.gitkeep
+!outputs/predictions/.gitkeep
+
+# ==========================================
+# Binaries & Executables
+# ==========================================
+*.exe
+ngrok.exe
+
+# ==========================================
+# OS Generated Files
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini

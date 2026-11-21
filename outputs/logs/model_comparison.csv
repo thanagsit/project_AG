@@ -1,0 +1,5 @@
+model,backbone,avg_mae,avg_rmse,avg_r2,std_mae
+ConvNeXt-Small,convnext_small,3.584,4.848,0.9766,0.326
+ConvNeXt-Small (HPC),convnext_small,3.701,5.038,0.9748,0.277
+EfficientNet-B5,efficientnet_b5,3.806,5.089,0.9743,0.309
+EfficientNet-B3,efficientnet_b3,4.556,6.005,0.9641,0.337
